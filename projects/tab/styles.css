@@ -36,11 +36,11 @@ h2 { font-family: var(--secondaryFont); font-size: 35px; font-weight: 700; }
 .container { padding: 100px 15px; margin: 0 auto;}
 
   /* Tab Styles */
-  .tab { float: unset; border: 1px solid #000; background-color: pink; width: 100%; height: auto; display: flex; justify-content: center; text-align: center; margin: 0 auto; max-width: 625px; }
+  .tab { float: unset; border: 1px solid #000; background-color: pink; width: 100%; height: auto; display: flex; justify-content: center; text-align: center; margin: 0 auto; max-width: 625px; box-shadow: 0px 6px 10px rgba(255, 255, 255, 0.3);}
   .tab button { display: block; background-color: inherit; color: black; padding: 15px; width: 100%; border: none; outline: none; text-align: center; cursor: pointer; font-size: 20px; border: 1px solid #000; transition: background-color 0.3s ease; }
   .tab button:hover { background-color: #ddd; }
   .tab button.active { background-color: #b74949; color: #fff; }
-  .tabcontent { padding: 50px; border: 1px solid #ccc; width: 100%; margin: 0 auto; height: auto; max-width: 625px; overflow: hidden; }
+  .tabcontent { padding: 50px; border: 2px solid #000; width: 100%; margin: 0 auto; height: auto; max-width: 625px; overflow: hidden; box-shadow: 0px 6px 10px rgba(255, 255, 255, 0.1);}
   .tabcontent span { font-size: 50px;display: block;}
   .clearfix::after { content: ""; clear: both; display: table; }
   /* Tab Styles */

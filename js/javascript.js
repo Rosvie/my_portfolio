@@ -1,7 +1,7 @@
 $(document).ready(function() {
   
     // Typewriter Effect
-    const text = "Hello!";
+    const text = "Hello! I'm ";
     const typingSpeed = 100; 
     let i = 0;
     
@@ -20,7 +20,7 @@ $(document).ready(function() {
     const slideWidth = $(".slider").width();  
     const sliderUlWidth = slideCount * slideWidth;
   
-    $("#slider_boxes").css({ width: sliderUlWidth, marginLeft: -460 });
+    $("#slider_boxes").css({ width: sliderUlWidth, marginLeft: -800 });
     $("#slider_boxes section:last-child").prependTo("#slider_boxes");
   
     function moveLeft() {

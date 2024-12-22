@@ -35,16 +35,107 @@ img { width: 100%;}
 h2 { font-family: var(--secondaryFont); font-size: 35px; font-weight: 700; }
 .container { padding: 100px 15px; margin: 0 auto;}
 
-  /* .agecalc_con { color: #000;} */
-  .input_agecalc {  max-width: 1000px;     width: 100%;margin: 0 auto 40px;}
-  .input_agecalc input,
-  .input_agecalc button { height: 50px; border: 2px solid transparent; background-color: #fff; color: #080808; font-weight: 500; border-radius: 5px; width: 100%;-webkit-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);}
-  .input_agecalc input { width: 100%; padding: 0 20px; font-size: 14px; margin: 20px 0; }
-  .input_agecalc button:hover { background: #000; color: #fff; border-color: #fff; }
+
+/* body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+  } */
+
+  /* .wrapper {   width: 100%;   max-width: var(--wrapper);   margin: 0 auto;   position: relative;   border-bottom: 1px solid #d4d4d4; }
+  .container {
+    text-align: center;
+    padding: 100px 15px;
+  margin: 0 auto;
+  } */
   
-  .output_agecalc { width: 100%;   display: flex; gap: 30px;  justify-content: center; max-width: 1000px;margin: 0 auto;}
-  .output_agecalc div {  width: 100%; background: #080808; border-radius: 5px; color: #ffffff; display: -ms-grid; display: grid; place-items: center; padding: 20px; -webkit-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3); box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3); }
-  .output_agecalc span { font-size: 40px; font-weight: 700; }
-  .output_agecalc p { font-size: 40px; color: #fff; font-weight: 700; }
-  .output_agecalc a { display: block; width: 100%; background-color: #080808; color: #ffffff; padding: 10px 0; text-align: center; text-decoration: none; margin-top: 40px; border-radius: 5px; -webkit-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3); box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3); }
+  .progress_con {
+    width: 500px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    margin: 100px auto 50px;
+  }
   
+  .progress-bar-back {
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background-color: lightgray;
+    border: none;
+    z-index: -1;
+    margin: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .progress-bar-front {
+    position: absolute;
+    height: 4px;
+    width: 0%;
+    background-color: #b5046b;
+    border: none;
+    z-index: -1;
+    margin: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.4s linear width;
+  }
+  
+  .step {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid lightgray;
+    color: lightgray;
+  }
+  
+  .step.checked {
+    color: #b5046b;
+    border-color: #b5046b;
+    transition: all 0.4s linear;
+    transition-delay: 0.3s;
+  }
+  
+  .step.checked small {
+    position: absolute;
+    bottom: -20px;
+    font-family: cursive;
+  }
+  
+  .btn {
+    background-color: slateblue;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 70px 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .btn:hover {
+    opacity: 0.9;
+    background: #b5046b;
+  }
+  
+  .btn:active {
+    transform: scale(0.97);
+  }
+  
+  .btn:disabled {
+    background-color: lightgray;
+  }
+  
+  @media (max-width: 500px) {
+    .progress_con {
+      width: 90vw;
+    }
+  }
